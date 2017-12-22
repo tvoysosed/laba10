@@ -9,7 +9,7 @@ int main()
 char str1[256], str3[256];
 int n = 0;
 string str2;
-bool fl1 = true, fl2 = false, fl3 = true, fl4 = true;
+bool fl1 = true, fl2 = true, fl4 = true;
 cout << "Vvedite kol-vo elementov" << endl;
 cin >> str1;
 for (int i = 0; i < strlen(str1); i++)
@@ -42,7 +42,7 @@ for (int k = 0; k < n; k++)
          }
          else
          {
-         fl3 = false;
+         fl2 = false;
          }
       }
       j++;
@@ -63,7 +63,7 @@ if (fl4 == true)
    sdvig = atoi(str3);
    }
 int b[n - sdvig], c[sdvig];
-if ((fl3 == false) || (fl1 == false) || (j  != n) || (fl4 == false))
+if ((fl2 == false) || (fl1 == false) || (j  != n) || (fl4 == false))
    {
    cout << "An error has occurred while reading input data" << endl;
    }
