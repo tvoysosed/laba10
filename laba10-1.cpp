@@ -9,7 +9,7 @@ int main()
 char str1[256];
 int n = 0;
 string str2;
-bool fl1 = true, fl2 = false, fl3 = true;
+bool fl1 = true, fl2 = true;
 cout << "Vvedite kol-vo elementov" << endl;
 cin >> str1;
 for (int i = 0; i < strlen(str1); i++)
@@ -42,13 +42,13 @@ for (int k = 0; k < n; k++)
          }
       else
          {
-         fl3 = false;
+         fl2 = false;
          }
       }
    j++;
    }
 cout << endl;
-if ((fl3 == false) || (fl1 = false) || (j  != n))
+if ((fl2 == false) || (fl1 = false) || (j  != n))
    {
    cout << "An error has occurred while reading input data" << endl;
    }
